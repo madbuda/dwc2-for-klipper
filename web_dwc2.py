@@ -82,7 +82,7 @@ class web_dwc2:
 	def handle_ready(self):
 		#	klippy related
 		self.current_tool = 0
-		self.chamber = self.printer.lookup_object('chamber', None)
+		self.chamber = self.printer.lookup_object('heater_generic', None)
 		self.heater_bed = self.printer.lookup_object('heater_bed', None)
 		self.fan = self.printer.lookup_object('fan', None)
 		self.sdcard = self.printer.lookup_object('virtual_sdcard', None)
